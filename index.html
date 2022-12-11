@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexModo</title>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+    rel="stylesheet" />
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Start Header-->
+  <div class="header">
+  </div>
+  <!--End Header-->
+  <!--Start Body-->
+  <div id="cont" class="container">
+    <!-- Start SearchBar-->
+    <div id="mainBody" class="siteBody">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input id="searchBar" type="text" placeholder="Find customers" onkeyup="searchFun()"  >
+      <!--Start filter-->
+
+      <div id="filter" onclick="showFilter()">
+        <p id="mainLabel">
+          Fliter by Name [A-Z] 
+            
+        </p>
+        <svg id="arrow" width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5 5L10 0H0Z" fill="#5C5F62"/>
+          </svg>
+      </div>
+      <div id="optionDiv">
+        <p id="ChoiseOne" onclick="sortFunc('A-Z')">
+           Name [A-Z]
+        </p>
+        <p id="ChoiseTwo" onclick="sortFunc('Z-A')">
+         Name [Z-A]
+        </p>
+      </div>
+      <!--End filter-->
+    </div>
+    <!-- End SearchBar-->
+
+    <!--Start Cards-->
+    <div class="parent" id=parent>
+      <div class="Card" id="cardContainer">
+        <!--End Cards-->
+      </div>
+      <!--End Body-->
+      <!--Js file-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+      <script src="script.js"></script>
+</body>
+
+</html>

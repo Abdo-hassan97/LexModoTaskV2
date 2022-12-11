@@ -1,0 +1,860 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2F5FA;
+    overflow-x: hidden;
+}
+
+#noDataFound {
+    text-align: center;
+    margin-right: 60%;
+    width: 100%;
+}
+
+
+
+#ChoiseOne {
+    cursor: pointer;
+}
+
+#ChoiseTwo {
+    cursor: pointer;
+}
+
+#mainLabel {
+    padding-bottom: 38px;
+
+}
+
+#arrow {
+    position: absolute;
+    right: 0px;
+    position: absolute;
+    left: 193px;
+    top: 27px;
+}
+
+#optionDiv {
+    opacity: 0;
+    padding-right: -47px;
+    position: absolute;
+    right: -78px;
+    top: 143px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 222px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: -12px 19px 34px -2px rgba(186, 201, 208, 0.33);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+i {
+    padding-top: 95px;
+    z-index: 22;
+    padding-left: 10px;
+    color: #202223;
+
+}
+
+::placeholder {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #202223;
+}
+
+.container {
+    padding-left: 167px;
+    padding-right: 167px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    position: relative;
+    width: 1920px;
+    height: 91px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 9px 6px 24px -2px rgba(0, 0, 0, 0.06);
+
+}
+
+#mainBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: auto;
+}
+
+
+
+
+*/ #searchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0.8rem 0 45px;
+    gap: 10px;
+    width: 546px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 100px;
+
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3px 15px 3px 20px;
+    gap: 10px;
+    width: 546px;
+    height: 50px;
+    background-color: white;
+    color: #202223;
+    border: none;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 100px;
+    position: absolute;
+    top: 78px;
+}
+
+#filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 12px 8px 16px;
+    gap: 10px;
+    width: 222px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 100px;
+    margin-right: 171px;
+    border-color: #FFFFFF;
+    color: gray;
+    position: absolute;
+    top: -14px;
+    right: -750px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #202223;
+
+
+}
+
+select {
+    margin-right: 0px;
+    position: relative;
+}
+
+option {
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+
+
+}
+
+
+#card {
+    border-radius: 8px;
+
+}
+
+#cardContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 44px;
+}
+
+#cc {
+    position: relative;
+    width: 363px;
+    height: 693px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 100px;
+    border: 1px solid none;
+
+}
+
+svg {
+    position: absolute;
+    left: 21px;
+}
+
+img {
+    width: 362px;
+    height: 289px;
+    border: 1px solid none;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#hr {
+    display: none;
+}
+
+p {
+
+    width: 206px;
+    margin-left: 36px;
+    height: 25px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #202223;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding: 20px;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+}
+
+#name {
+    padding-top: 20px;
+
+    padding-left: 20px;
+    padding-bottom: -1px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202223;
+}
+
+#colored {
+    color: #51C5FF;
+    margin-right: 6px;
+    padding-left: 16px;
+    padding-top: 37px;
+}
+
+#usrName {
+
+    position: absolute;
+    left: -17px;
+    top: 330px;
+    padding-left: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    margin-bottom: -20px;
+    color: #919191;
+}
+
+
+span {
+    padding-bottom: 11px;
+    text-align: left;
+}
+
+p {
+    margin-left: 36px;
+    color: #202223;
+    font-family: 'Rubik';
+
+
+}
+
+#addres {
+    padding-bottom: 63px;
+    display: flex;
+    padding-left: 12px;
+
+}
+
+#paragraphSpan {
+    margin-left: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+
+
+    color: #202223;
+}
+
+
+@media screen and (max-width: 3000px) {
+    #optionDiv {
+        right: 120px;
+        top: 151px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 44px;
+        row-gap: 20px;
+        column-gap: 44px;
+    }
+
+    #filter {
+        top: -9px;
+        left: 2195px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 3000px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+        width: 546px;
+        height: 50px;
+    }
+
+    .container {
+        padding-left: 295px;
+        padding-right: 167px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 2040px) {
+    #optionDiv {
+        right: 25px;
+        top: 151px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 44px;
+        row-gap: 20px;
+        column-gap: 44px;
+    }
+
+    #filter {
+        top: -9px;
+        left: 1425px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 2040px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+        width: 546px;
+        height: 50px;
+    }
+
+    .container {
+        padding-left: 200px;
+        padding-right: 167px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    #optionDiv {
+        right: -14px;
+        top: 151px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+        column-gap: 44px;
+
+    }
+
+    #filter {
+        top: -12px;
+        left: 1362px;
+    }
+
+    #searchBar {
+        width: 546px;
+        height: 50px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 1951px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding-left: 182px;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    #optionDiv {
+        right: -80px;
+        top: 141px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 44px;
+
+    }
+
+    #filter {
+        top: -19px;
+        left: 952px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 1364px;
+    }
+
+    .container {
+        padding-left: 86px;
+
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+        width: 546px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #optionDiv {
+        right: -211px;
+        top: 151px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 44px;
+
+    }
+
+    #filter {
+        top: -12px;
+        left: 947px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 1305px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding-left: 73px;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+        width: 546px;
+        height: 50px;
+    }
+}
+
+/*labtop*/
+@media screen and (max-width: 1024px) {
+    #optionDiv {
+        right: -488px;
+        top: 139px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 44px;
+
+    }
+
+    #filter {
+        top: -22px;
+        left: 953px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: auto;
+
+    }
+
+    .header {
+        width: 1507px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding-left: 169px;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+        width: 546px;
+        height: 50px;
+    }
+
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+    #optionDiv {
+        right: -351px;
+        top: 198px;
+    }
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 44px;
+        row-gap: 20px;
+    }
+
+    #filter {
+
+        top: 36px;
+        left: 154px;
+    }
+
+    #searchBar {
+        width: 380px;
+    }
+
+    #mainBody {
+        width: fit-content;
+    }
+
+    .header {
+        width: 753px;
+    }
+
+    .container {
+        padding-left: 184px
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 414px) {
+    #optionDiv {
+        right: -351px;
+        top: 182px;
+        width: 222px;
+        height: 100px;
+
+    }
+
+    #mainLabel {
+        padding-bottom: 38px;
+        width: 222px;
+        height: 50px;
+    }
+
+    #cont {
+        width: 414px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    #hr {
+        display: block;
+        margin-top: 99px;
+        opacity: 0.5;
+    }
+
+    p {
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+
+
+        color: #595959;
+
+    }
+
+    i {
+        padding-top: 70px;
+    }
+
+    #mainBody {
+        flex-direction: column;
+        margin-top: -26px;
+    }
+
+    #name {
+
+        padding-left: 16px;
+        padding-bottom: -1px;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #202223;
+        width: 293px;
+        padding-top: 40px;
+    }
+
+
+    #mainBody {
+        flex-direction: column;
+    }
+
+    #filter {
+        left: 156px;
+        position: absolute;
+        top: 25px;
+        width: 222px;
+        height: 50px;
+    }
+
+
+    #cardContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10%;
+        row-gap: 2px;
+    }
+
+    #cc {
+        width: 380px;
+        height: 458px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        position: relative;
+        line-height: 22px;
+        margin-top: 35px;
+
+
+    }
+
+    img {
+        position: absolute;
+        width: 106px;
+        height: 109px;
+        left: 267px;
+        top: 28px;
+        background: url(image.png);
+        border-radius: 71px;
+    }
+
+    #paraContainer {
+        line-height: 1.5em;
+        height: 3em;
+        overflow: hidden;
+    }
+
+    #colored {
+        color: #51C5FF;
+        margin-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+        top: 58px;
+        width: 250px;
+
+    }
+
+    #usrName {
+
+        position: absolute;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 25px;
+        color: #919191;
+        top: 41px;
+        left: -21px;
+    }
+
+    #searchBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3px 15px 3px 20px;
+        gap: 10px;
+
+        width: 380px;
+        height: 50px;
+
+        background: #FFFFFF;
+        border-radius: 8px;
+        position: absolute;
+        top: 51px;
+    }
+
+    .header {
+        width: 414px;
+        height: 65px
+    }
+
+    #mainBody {
+        padding-bottom: 81px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #searchBar {
+        padding: 0 0.8rem 0 45px;
+    }
+}
